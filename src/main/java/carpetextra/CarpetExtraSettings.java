@@ -36,4 +36,23 @@ public class CarpetExtraSettings
         category = {BUGFIX,FEATURE,EXTRA,EXPERIMENTAL}
     )
     public static boolean hopperMinecartItemTransfer= false;
+    
+    @Rule(desc = "Enables /ping for players to get their ping", category = {COMMAND, EXTRA})
+    public static boolean commandPing = true;
+    
+    @Rule(
+            desc = "Water bottles in dispensers fill with water when dispensed with water in front.",
+            category = {EXPERIMENTAL, FEATURE, EXTRA}
+    )
+    public static boolean dispensersFillBottles;
+    
+    @Rule(
+            desc = "Minecarts can be filled with hoppers, chests, tnt and furnace.",
+            category = {EXPERIMENTAL, FEATURE, EXTRA}
+    )
+    public static boolean dispensersFillMinecarts = false;
+    
+    @Rule(desc = "Multiple ice crushed by falling anvils make packed ice", category = {EXTRA, EXPERIMENTAL, FEATURE})
+    public static boolean renewablePackedIce = false;
+    
 }
